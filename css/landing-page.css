@@ -91,6 +91,7 @@ h6 {
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
+    border-radius: 15px
 }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
@@ -174,6 +175,10 @@ h6 {
     border-bottom: 1px solid #e7e7e7;
 }
 
+.rounded {
+    border-radius: 15px
+}
+
 .section-heading {
     margin-bottom: 30px;
 }
@@ -181,6 +186,11 @@ h6 {
 .section-heading-spacer {
     float: left;
     width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.project-heading {
+    width: 300px;
     border-top: 3px solid #e7e7e7;
 }
 
