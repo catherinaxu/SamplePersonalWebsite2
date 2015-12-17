@@ -82,6 +82,19 @@
             wrapContent: false        // This option let you choose whether you want everything inside to reacts to your cursor, or just the background. Toggle it to true to have every elements inside reacts the same way. The default value is false
         });
 
+        $(document).ready(function(){
+
+            $(".bg").interactive_bg(); // function call
+        });
+
+      // change background size on window resize
+        $(window).resize(function() {
+            $(".bg > .ibg-bg").css({
+                width: $(window).outerWidth(),
+                height: $(window).outerHeight()
+            })
+        })
+
       // change background size on window resize
     </script>
     <!-- /.intro-header -->
