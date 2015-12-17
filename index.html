@@ -16,10 +16,24 @@
 
     <!-- Custom CSS -->
     <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- jQuery-->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.parallaxify.min.js"></script>
+    <script src="js/jquery.interactive_bg.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom -->
+    <script src="js/background-effect.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,265 +45,46 @@
 </head>
 
 <body>
-    
     <!-- Header -->
-        <a name="header"></a>
-    <div class="intro-header">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>Catherina Xu</h1>
-                        <hr class="intro-divider">
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://linkedin.com/in/catherinaxu" class="btn-social btn-outline"><i class="fa fa-fw fa-2x fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://plus.google.com/u/0/116985232702853893402/posts" class="btn-social btn-outline"><i class="fa fa-fw fa-2x fa-google"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/catherinaxu" class="btn-social btn-outline"><i class="fa fa-fw fa-2x fa-github"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/catherinaxu" class="btn-social btn-outline"><i class="fa fa-fw fa-2x fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="mailto:catherinaxu@stanford.edu" class="btn-social btn-outline"><i class="fa fa-fw fa-2x fa-envelope-o"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    <div class="wrapper bg animated fadeIn"  data-ibg-bg="img/intro-bg-10.png">
+        <div class="intro-message">
+            <div class= "animated fadeInUp zeroth">
+                <h1>CATHERINA XU</h1>
+                <h2 class="intro-subtitle">Stanford CS '18</h2>
             </div>
-
+            <br>
+            <ul class="list-inline">
+                <li>
+                    <a href="https://linkedin.com/in/catherinaxu" class="btn-social btn-outline animated rotateIn first"><i class="fa fa-fw fa-2x fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/u/0/116985232702853893402/posts" class="btn-social btn-outline animated rotateIn second"><i class="fa fa-fw fa-2x fa-google"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/catherinaxu" class="btn-social btn-outline animated rotateIn third"><i class="fa fa-fw fa-2x fa-github"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/catherinaxu" class="btn-social btn-outline animated rotateIn fourth"><i class="fa fa-fw fa-2x fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="mailto:catherinaxu@stanford.edu" class="btn-social btn-outline animated rotateIn fifth"><i class="fa fa-fw fa-2x fa-envelope-o"></i></a>
+                </li>
+            </ul>
         </div>
-        <!-- /.container -->
-
     </div>
+    <!-- /.container -->
+    <script>
+        $(".bg").interactive_bg({
+            strength: 25,              // Movement Strength when the cursor is moved. The higher, the faster it will reacts to your cursor. The default value is 25.
+            scale: 1.05,               // The scale in which the background will be zoomed when hovering. Change this to 1 to stop scaling. The default value is 1.05.
+            animationSpeed: "100ms",   // The time it takes for the scale to animate. This accepts CSS3 time function such as "100ms", "2.5s", etc. The default value is "100ms".
+            contain: true,             // This option will prevent the scaled object/background from spilling out of its container. Keep this true for interactive background. Set it to false if you want to make an interactive object instead of a background. The default value is true.
+            wrapContent: false        // This option let you choose whether you want everything inside to reacts to your cursor, or just the background. Toggle it to true to have every elements inside reacts the same way. The default value is false
+        });
+
+      // change background size on window resize
+    </script>
     <!-- /.intro-header -->
-
-    <!-- Page Content -->
-
-	<a name="about"></a>
-    <div class="content-section-a">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Hi, I'm Cat.</h2>
-                    <p class="lead"><i class="fa fa-fw fa-bicycle"></i> &nbsp Stanford '18, coder nerd, and tech aficionado<br><br><i class="fa fa-fw fa-microphone"></i> &nbsp Badminton player, amateur singer, and hacker<br><br><i class="fa fa-fw fa-code"></i> &nbsp Data junkie, Android experimenter, and web designer</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive rounded" src="img/stanford.jpg" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    
-        <!-- Portfolio Grid Section -->
-        <a  name="portfolio"></a>
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center portfolio-heading">
-                    <hr class="project-heading">
-                    <div class="clearfix"></div>
-                    <h2>Projects</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal0" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                UberPrepared
-                            </div>
-                        </div>
-                        <img src="img/portfolio/uberprepared.png" class="img-responsive rounded no-border" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                Wake Me Up
-                            </div>
-                        </div>
-                        <img src="img/portfolio/wakemeup.jpg" class="img-responsive rounded no-border" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                My Travel Diary
-                            </div>
-                        </div>
-                        <img src="img/portfolio/mytraveldiary.jpg" class="img-responsive rounded" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                CampusBubble
-                            </div>
-                        </div>
-                        <img src="img/portfolio/campusbubble.jpg" class="img-responsive rounded" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- About -->
-        <a  name="contact"></a>
-    <section class="about-end">
-        <div class="container">
-            <div class="row">
-                <hr class="project-heading">
-                <div class="col-lg-12 text-center">
-                    <h2 class="portfolio-heading">Interested in learning more?</h2>
-                    <a href="#header" class="btn btn-lg btn-default">Connect with me</a><a href="pdf/resume.pdf" class="btn btn-lg btn-default">Check out my CV</a>
-                </div>
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#portfolio">Projects</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">Connect</a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Catherina Xu 2015. All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Wake Me Up</h2>
-                            <hr class="project-heading">
-                            <p>This app was created with Kristen Law at Treehacks 2015. We are currently working on adding more features.<br><br>Ever miss a train stop because you were snoozing? Ever refrained from napping on public transportation because you were anxious? Wake Me Up combines your phone + Pebble and makes sure that you wake up before your stop. The app uses the Google Play Services API and tracks your location over time through your Android device, updating every 5 seconds and displaying crucial travel data such as speed, destination, and geographical coordinates. When you are within a certain radius of your destination (currently supports various Caltrain stations), your Pebble will buzz on your wrist until you have woken up and silenced it.<br><br>Intended for anyone and everyone who wants to catch a good nap on a long train, car, or bus ride!<br><br>GitHub page: <a href="https://github.com/kjlaw/PebbleCaltrain">Android</a>|<a href="https://github.com/kjlaw/PebbleCaltrainNotification">Pebble </a> </p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>My Travel Diary</h2>
-                            <hr class="project-heading">
-                            <p>My Travel Diary is an Android applications that allows nostalgic users to record details about places they've visited throughout their lifetime. With Google Maps API, and SQLite persistent storage, users are able to add, update, and delete markers on a world map, as well as assign a short description to each location.<br><br>Support for image uploads, multi-colored markers, and search suggestions coming soon!<br><br><a href="https://github.com/catherinaxu/My-Travel-Diary-With-Database">GitHub page</a></p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>CampusBubble</h2>
-                            <hr class="project-heading">
-                            <p>This app was created with Rishab Mehra, Theo Diamandis, Jialin Ding, and Konner Robison at the Accenture Hackathon Games 2014.<br><br>Inspired by our inability to find gym buddies while on campus, we created this iPhone app to encourage the spontaneous formation of gym, dinner, and study-groups with the collegiate community. The app uses PubNub API to enable real-time updates of your friends' whereabouts, eliminating the need for the excessive messaging often required to plan meet-ups. CampusBubble also features a simple textbook exchange service in Bitcoin, facilitated through BitPay API - the app went on to win the BitPay award. <br><br><a href="https://www.facebook.com/CampusBubble2014?fref=ts">Facebook page</a></p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>UberPrepared</h2>
-                            <hr class="project-heading">
-                            <p>This app was created with Kristen Law and Ryan Perry-Nguyen at Hack the Planet 2015.<br><br>Have you ever wanted to call an Uber but couldn't because there was no data service? Or maybe you wanted an Uber to pick you up after a movie and wished you could order the Uber ahead of time? Well now you can! This app uses Twilio Messaging, Uber, and 
-                            Google Places API to bring you an Uber pre-scheduling interface through both SMS and Android. After setting the pickup location, destination, and arrival time using natural language commands, the backend will intelligently book an Uber at just the right time so you'll have an Uber waiting for you when you need it. <br><br><a href="https://github.com/rperryng/uber-prepared">GitHub page</a></p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    
-    <!-- Parallax -->
-    <script> src="js/parallax.min.js"</script>
 
 </body>
 
